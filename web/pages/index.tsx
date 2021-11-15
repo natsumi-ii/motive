@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { getRoutes } from "./../lib/routes";
 import BaseLayout from "@/components/templates/Layouts/BaseLayout";
+import { App } from "../components/templates/Dnd/App"
 
 const Home: NextPage = () => {
   const links = [
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
           ))}
         </ul>
       </div>
+      <App />
     </BaseLayout>
   );
 };
